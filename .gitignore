@@ -1,0 +1,6 @@
+.history
+
+.env
+
+data/
+!data/.gitkeep
