@@ -16,4 +16,19 @@ docker compose --env-file .env.prod up -d
 
 # 验证配置
 docker compose config
+
+# 查看容器
+docker ps
+
+# 查看日志
+docker logs mysql-server
+
+# 进入容器
+docker exec -it mysql-server mysql -uroot -p
+
+输入密码后，执行：
+# 查看字符集
+SHOW VARIABLES LIKE 'character%';
+# 查看默认字符集
+SHOW VARIABLES LIKE 'default_authentication_plugin';
 ```
